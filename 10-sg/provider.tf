@@ -7,7 +7,7 @@ terraform {
   }
   backend "s3" {
     bucket = "someshwar-devops"
-    key    = "eks-vpc-module"
+    key    = "eks-vpc-sg"
     region = "us-east-1"
     use_lockfile = true
     encrypt = true
