@@ -1,3 +1,4 @@
+
 terraform {
   required_providers {
     aws = {
@@ -5,10 +6,9 @@ terraform {
       version = "6.16.0"
     }
   }
-
   backend "s3" {
-    bucket = "remote-state-86s-dev"
-    key    = "roboshop-eks-bastion"
+    bucket = "someshwar-devops"
+    key    = "eks-bastion"
     region = "us-east-1"
     use_lockfile = true
     encrypt = true
@@ -16,5 +16,5 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
+  # Configuration options
 }
